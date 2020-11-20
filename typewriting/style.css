@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: flex;
+    color: aliceblue;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+                url(KakaoTalk_20200816_150341032.jpg) no-repeat center/cover;     
+}
+.typing {
+    position: relative;
+    margin-left: 1rem;
+
+}
+.typing::after {
+    content: '';
+    position: absolute;
+    top: 1%;
+    right: -5px;
+    width: 1px;
+    height: 7%;
+    border-right: 2px solid white;
+    animation: blink .5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} 
